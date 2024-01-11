@@ -17,8 +17,8 @@ export function prepareData(
     // const arrayItem = [];
     const arrayItem: [string, PortfolioItem[]]= ["", []];
 
-    arrayItem.push(nameGroup[i])
-    arrayItem.push(array.slice(j, j += groupSize));
+    arrayItem[0] = nameGroup[i]
+    arrayItem[1] = array.slice(j, j += groupSize);
     resultArray.push(arrayItem);
   }
 
