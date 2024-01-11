@@ -15,7 +15,7 @@ export function prepareData(
   for (let i = 0; i < nameGroup.length; i += 1) {
 
     // const arrayItem = [];
-    const arrayItem: [string, PortfolioItem[]] = [];
+    const arrayItem: [string, PortfolioItem[]]= ["", []];
 
     arrayItem.push(nameGroup[i])
     arrayItem.push(array.slice(j, j += groupSize));
@@ -24,3 +24,4 @@ export function prepareData(
 
   return resultArray;
 }
+
